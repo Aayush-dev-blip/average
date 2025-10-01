@@ -1,6 +1,11 @@
-def well_wishes():
-    print("hello")
-    print('how are you doing')
+def factorial(n):
+    if n == 0 or n == 1:
+        return 1
+    else:return n * factorial(n-1)
 
-
-well_wishes()
+num = int(input("enter a number"))
+if num < 0:
+    print("factorial dousn't exist for negitive numbers")
+else:
+    print(f"the factorial of {num} is {factorial(num)}")
+    
