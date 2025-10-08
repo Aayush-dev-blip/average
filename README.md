@@ -1,11 +1,12 @@
-def factorial(n):
-    if n == 0 or n == 1:
-        return 1
-    else:return n * factorial(n-1)
+#Write a program to check alphabet “A” is present in the given string or not. And terminate the loop after finding the alphabet “A.”
 
-num = int(input("enter a number"))
-if num < 0:
-    print("factorial dousn't exist for negitive numbers")
+a = input("enter a word:")    
+
+for i in a:
+  if (i == 'A'):
+    print("A is found")
+    break
 else:
-    print(f"the factorial of {num} is {factorial(num)}")
-    
+    print("A is not found")
+        
+
